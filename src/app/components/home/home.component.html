@@ -1,0 +1,12 @@
+<div class="alert alert-success animated fadeIn">
+    <h3>SPOTIAPP <small>New songs</small></h3>
+    <p>Mostrando nuevas canciones añadidas a Spoti</p>
+</div>
+<div *ngIf="error" class="alert alert-warning animated fadeIn">
+    <h3>Error</h3>
+    <p>Ha habido un error!! TE JODES<br>Apaga y enciende loco</p>
+</div>
+
+<app-loading *ngIf="loading"></app-loading>
+
+<app-cards [items]="nuevasCanciones"></app-cards>
